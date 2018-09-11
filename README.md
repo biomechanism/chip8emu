@@ -105,7 +105,7 @@ e.g.
 </table>
 
 
-## Tehnical Details
+## Technical Details
 
 The initial implementation of the drawing functionality was a bit unwieldy and convoluted, I’ve
 simplified and cleaned things up considerably since then. Partially it comes for the challenge of just
