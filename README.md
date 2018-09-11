@@ -1,5 +1,7 @@
 # Chip-8 Emulator/VM in Go
 
+![Pong](/doc/images/chip8emu-1.png)
+
 So the emulator is finally finished! Well, functional, I still need to make some fixes around the audio beep. 
 It has taken a while, mostly because I’ve only done little bits now and then, and leaving it for many months when encountering particularly annyoying bugs. One in particular drove
 me mad. It appears somewhere along the line the implementation of Chip 8 VMs has drified from
