@@ -106,22 +106,16 @@ e.g.
 
 
 ## Tehnical Details
-The initial implementation of the drawing functionality was a bit unwieldy and convoluted, I’ve
-simplified and cleaned things up considerably since then. Partially that came from the challenge of just
-sitting down and figuring the algorithms out myself, and it worked fine, but it was a bit overly
-complex for something so simple. Initially my objective was to only use the actual 4096? bytes of
-memory, I have since scrapped that and seperated the video memory, and defined it as a
-multidimensional array for even easier access. I’m also using 1 byte per pixel, as opposed to 1 byte per 8 pixels in the original bit packed memory, it makes life a bit (no pun intended) easier.
-
-### Clock Rate
 
 The initial implementation of the drawing functionality was a bit unwieldy and convoluted, I’ve
 simplified and cleaned things up considerably since then. Partially it comes for the challenge of just
 sitting down and figuring the algorithms out myself, and it worked fine, but it was a bit overly
 complex for something so simple. Initially my objective was to only use the actual 4096? bytes of
 memory, I have since scrapped that and seperated the video memory, and defined it as a
-multidimensional array for even easier access. I’m also using 1 byte per pixel, as opposed to 1 byte per 8 pixels in the original bit packed memory, it makes life a bit (no pun intended) easier.
+multidimensional array for even easier access. I’m also using 1 byte per pixel, as opposed to 1 byte 
+per 8 pixels in the original bit packed memory, it makes life a bit (no pun intended) easier.
 
+### Clock Rate
 
 There doesn’t appear to be too much available on the most appropriate clock frequency, I’ve generally seen it 
 mentioned in other material of a rate around 500Hz – 540Hz. This emulator has it clocked at 500Hz, theoretically, and I say theoretically because I’ve chosen to use sdl.Delay() at two milliseconds. However with this approach the timing is really at the mercy and vagaries of the underlying OS scheduler. I have found it quite adequate however.
