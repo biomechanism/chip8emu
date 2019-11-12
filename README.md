@@ -111,7 +111,7 @@ The initial implementation of the drawing functionality was a bit unwieldy and c
 simplified and cleaned things up considerably since then. Partially it comes for the challenge of just
 sitting down and figuring the algorithms out myself, and it worked fine, but it was a bit overly
 complex for something so simple. Initially my objective was to only use the actual 4096? bytes of
-memory, I have since scrapped that and seperated the video memory, and defined it as a
+memory, I have since scrapped that and separated the video memory, and defined it as a
 multidimensional array for even easier access. I’m also using 1 byte per pixel, as opposed to 1 byte 
 per 8 pixels in the original bit packed memory, it makes life a bit (no pun intended) easier.
 
